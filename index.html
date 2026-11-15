@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<body>
+    <img src="/206899196.jpg" class="krabba" alt="A beautiful crab">
+   <h1>Yehor Khytryy</h1>
+   <h4>Software developer and founder of <a href="https://github.com/KrabbaTek">KrabbaTek</a></h4> 
+
+   <h2>Blog posts</h2>
+   <ul>
+        {% for post in site.posts limit:15 %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {% endfor %}
+   </ul>
+</body>
